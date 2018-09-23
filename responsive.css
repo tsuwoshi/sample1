@@ -13,6 +13,59 @@
   footer{
     text-align: center;
   }
+  .signup-modal-wrapper {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    width: 100%;
+  }
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+
+  .fa-times {
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+
+  .signup-form {
+    width: 100%;
+  }
+
+  .signup-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+
+  .signup-form input {
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    padding: 14px;
+    background-color: #5dca88;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 90%;
+  }
 }
 
 /* モバイル向け*/
@@ -48,5 +101,58 @@
   .lesson{
     width: 100%;
     margin-bottom: 50px;
+  }
+  .signup-modal-wrapper {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    width: 100%;
+  }
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 0 ;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .fa-times {
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+
+  .signup-form {
+    width: 100%;
+  }
+
+  .signup-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+
+  .signup-form input {
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    padding: 14px;
+    background-color: #5dca88;
+    border: none;
+    border-radius: 3px;
+    color: ;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 90%;
   }
 }
