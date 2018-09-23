@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -16,12 +17,72 @@
         </div>
         <span class="fa fa-bars menu-icon" id="disp"></span>
         <div class="header-right">
-          <a href="#">ログイン</a>
-          <a href="#">新規登録</a>
+          <a href="#" id="login-btn">ログイン</a>
+          <a href="#" class="signup-show">新規登録</a>
           <a href="#" class="login">ヘルプ</a>
         </div>
       </div>
     </header>
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div class="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div class="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="signup-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div class="signup-form">
+          <h2>Emailでログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div class="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="signup-modal-wrapper" id="facebook-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div class="signup-form">
+          <h2>Facebookでログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="アカウント名">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div class="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="signup-modal-wrapper" id="twitter-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div class="signup-form">
+          <h2>Twitterでログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="アカウント名">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div class="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="top-wrapper">
       <div class="container mbl">
         <h1 class="">Engineer First.</h1>
@@ -29,7 +90,7 @@
         <p class="mbl_p">MY SAMPLE PAGEはITエンジニア向け人材マッチングサービスです。</p>
         <p class="mbl_p">登録エンジニア数約２５万人、登録企業数約３万社の日本最大規模の人材マッチングサイトです。</p>
         <div class="btn-wrapper">
-          <a href="#" class="btn signup btn_mbl">新規登録はこちら</a>
+          <a href="#" class="btn signup btn_mbl signup-show">新規登録はこちら</a>
           <p>or</p>
           <a href="#" class="btn facebook btn_mbl"><span class="fa fa-facebook"></span>Facebookで登録</a>
           <a href="#" class="btn twitter btn_mbl"><span class="fa fa-twitter"></span>Twitterで登録</a>
@@ -80,7 +141,7 @@
           <h2>さぁ、あなたもMY SAMPLE PAGEで新しいを仕事を探してみませんか?</h2>
           <h3>Let's find a job, work to be creative!</h3>
         </div>
-        <span class="btn message btn_mbl">今すぐ登録する</span>
+        <span class="btn message btn_mbl signup-show">今すぐ登録する</span>
       </div>
     </div>
     <footer>
@@ -90,5 +151,6 @@
         <p><small>&copy;2018 Tsuyoshi Sakai all rights reserved</small></p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
